@@ -16,6 +16,9 @@ public class ConvertArabic {
         mapNumricWord.put(5, "five");
         mapNumricWord.put(6, "six");
         mapNumricWord.put(7, "seven");
+        mapNumricWord.put(8, "eight");
+        mapNumricWord.put(9, "nine");
+        mapNumricWord.put(10, "ten");
         return mapNumricWord.get(arabic).toString();
     }
 }

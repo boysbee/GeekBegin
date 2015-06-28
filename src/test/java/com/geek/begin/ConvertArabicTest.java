@@ -57,4 +57,27 @@ public class ConvertArabicTest {
         String actual = convertor.toWord(7);
         assertEquals(expected, actual);
     }
+    @Test
+    public void put_8_should_return_eight(){
+        ConvertArabic convertor = new ConvertArabic();
+        String expected = "eight";
+        String actual = convertor.toWord(8);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void put_9_should_return_nine(){
+        ConvertArabic convertor = new ConvertArabic();
+        String expected = "nine";
+        String actual = convertor.toWord(9);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void put_10_should_return_ten(){
+        ConvertArabic convertor = new ConvertArabic();
+        String expected = "ten";
+        String actual = convertor.toWord(10);
+        assertEquals(expected, actual);
+    }
+
+
 }
