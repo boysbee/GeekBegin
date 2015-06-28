@@ -78,6 +78,13 @@ public class ConvertArabicTest {
         String actual = convertor.toWord(10);
         assertEquals(expected, actual);
     }
+    @Test
+    public void put_0_should_return_zero(){
+        ConvertArabic convertor = new ConvertArabic();
+        String expected = "zero";
+        String actual = convertor.toWord(0);
+        assertEquals(expected, actual);
+    }
 
 
 }

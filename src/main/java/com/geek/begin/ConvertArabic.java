@@ -9,6 +9,7 @@ import java.util.Map;
 public class ConvertArabic {
     public String toWord(int arabic) {
         Map mapNumricWord = new HashMap<Integer,String>();
+        mapNumricWord.put(0, "zero");
         mapNumricWord.put(1, "one");
         mapNumricWord.put(2, "two");
         mapNumricWord.put(3, "three");
