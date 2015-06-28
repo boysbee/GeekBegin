@@ -36,4 +36,12 @@ public class ConvertArabicTest {
         String actual = convertor.toWord(4);
         assertEquals(expected, actual);
     }
+    @Test
+    public void put_5_should_return_five(){
+        ConvertArabic convertor = new ConvertArabic();
+        String expected = "five";
+        String actual = convertor.toWord(5);
+        assertEquals(expected, actual);
+    }
+
 }
