@@ -5,6 +5,24 @@ package com.geek.begin;
  */
 public class ConvertArabic {
     public String toWord(int arabic) {
-        return arabic == 1 ? "one" : "two";
+        String result = null;
+
+        switch (arabic) {
+            case 1:
+                result = "one";
+                break;
+            case 2:
+                result = "two";
+                break;
+            case 3:
+                result = "three";
+                break;
+            default:
+                result = null;
+        }
+
+
+
+        return result;
     }
 }

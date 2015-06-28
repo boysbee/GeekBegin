@@ -22,6 +22,12 @@ public class ConvertArabicTest {
         String actual = convertor.toWord(2);
         assertEquals(expected, actual);
     }
-
+    @Test
+    public void put_3_should_return_three(){
+        ConvertArabic convertor = new ConvertArabic();
+        String expected = "three";
+        String actual = convertor.toWord(3);
+        assertEquals(expected, actual);
+    }
 
 }
