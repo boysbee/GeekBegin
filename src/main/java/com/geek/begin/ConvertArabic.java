@@ -5,6 +5,6 @@ package com.geek.begin;
  */
 public class ConvertArabic {
     public String toWord(int arabic) {
-        return "one";
+        return arabic == 1 ? "one" : "two";
     }
 }
