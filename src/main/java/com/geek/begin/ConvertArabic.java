@@ -18,7 +18,7 @@ public class ConvertArabic {
         mapNumricWord.put(7, "seven");
         mapNumricWord.put(8, "eight");
         mapNumricWord.put(9, "nine");
-        mapNumricWord.put(10, "kuy");
+        mapNumricWord.put(10, "ten");
         return mapNumricWord.get(arabic).toString();
     }
 }
