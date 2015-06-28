@@ -23,6 +23,9 @@ public class ConvertArabic {
             case 5:
                 result = "five";
                 break;
+            case 6:
+                result = "six";
+                break;
             default:
                 result = null;
         }
