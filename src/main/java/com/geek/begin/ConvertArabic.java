@@ -7,8 +7,10 @@ import java.util.Map;
  * Created by boysbee on 6/28/15.
  */
 public class ConvertArabic {
-    public String toWord(int arabic) {
-        Map mapNumricWord = new HashMap<Integer,String>();
+
+    private final Map mapNumricWord = new HashMap<Integer,String>();
+
+    ConvertArabic(){
         mapNumricWord.put(0, "zero");
         mapNumricWord.put(1, "one");
         mapNumricWord.put(2, "two");
@@ -20,6 +22,10 @@ public class ConvertArabic {
         mapNumricWord.put(8, "eight");
         mapNumricWord.put(9, "nine");
         mapNumricWord.put(10, "ten");
+    }
+
+
+    public String toWord(int arabic) {
         return mapNumricWord.get(arabic).toString();
     }
 }
