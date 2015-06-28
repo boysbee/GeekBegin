@@ -1,40 +1,21 @@
 package com.geek.begin;
 
-/**
+import java.util.HashMap;
+import java.util.Map;
+
+/**<><//**<>
  * Created by boysbee on 6/28/15.
  */
 public class ConvertArabic {
     public String toWord(int arabic) {
-        String result = null;
-
-        switch (arabic) {
-            case 1:
-                result = "one";
-                break;
-            case 2:
-                result = "two";
-                break;
-            case 3:
-                result = "three";
-                break;
-            case 4:
-                result = "four";
-                break;
-            case 5:
-                result = "five";
-                break;
-            case 6:
-                result = "six";
-                break;
-            case 7:
-                result = "seven";
-                break;
-            default:
-                result = null;
-        }
-
-
-// return result
-        return result;
+        Map mapNumricWord = new HashMap<Integer,String>();
+        mapNumricWord.put(1, "one");
+        mapNumricWord.put(2, "two");
+        mapNumricWord.put(3, "three");
+        mapNumricWord.put(4, "four");
+        mapNumricWord.put(5, "five");
+        mapNumricWord.put(6, "six");
+        mapNumricWord.put(7, "seven");
+        return mapNumricWord.get(arabic).toString();
     }
 }
